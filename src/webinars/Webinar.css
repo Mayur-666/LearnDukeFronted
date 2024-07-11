@@ -1,0 +1,5 @@
+@media screen and (min-width: 1600px) {
+    .webinarGrid{
+        grid-template-columns: 50%  50%;
+    }
+}

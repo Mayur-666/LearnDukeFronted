@@ -1,0 +1,100 @@
+/* teaching.css */
+
+.animate-slide-left {
+  animation: slide-left 0.3s linear;
+}
+
+.glow-animation{
+  animation: glow 0.3s infinite linear;
+}
+@keyframes glow {
+  0%{
+    filter: brightness(100%);
+    transform: rotateZ(0deg);
+  }
+  25%{
+    transform: rotateZ(-5deg);
+  }
+  50%{
+    transform: rotateZ(0deg);
+  }
+  100%{
+    filter: brightness(150%);
+    transform: rotateZ(5deg);
+  }
+}
+
+@keyframes slide-left {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .h-20 {
+    height: 5rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .text-lg {
+      font-size: 1rem;
+    }
+  
+    .text-2xl {
+      font-size: 1.25rem;
+    }
+  
+    .h-16 {
+      height: 4rem;
+    }
+  
+    .space-x-4 {
+      gap: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .space-x-4 {
+      gap: 0.5rem;
+    }
+  
+    .text-lg {
+      font-size: 0.875rem;
+    }
+  
+    .text-2xl {
+      font-size: 1rem;
+    }
+  
+    .flex-col {
+      flex-direction: column;
+    }
+  
+    .hidden {
+      display: none !important;
+    }
+  }
+  

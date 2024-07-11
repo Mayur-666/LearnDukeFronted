@@ -1,0 +1,23 @@
+/* For webkit browsers (Chrome, Safari) */
+.hidden-scrollbar::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+  
+  .hidden-scrollbar {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;     /* Firefox */
+  }
+  
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  /* explorementors.css */
+
+/* Add these styles to handle horizontal scrolling for reviews on smaller screens */
+
+
+
+

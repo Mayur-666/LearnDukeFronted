@@ -1,0 +1,172 @@
+.img-container-upper {
+  animation: travelRight 15s infinite ease-in-out;
+}
+.img-container-lower {
+  animation: travelLeft 15s infinite ease-in-out;
+}
+
+@keyframes travelRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes travelLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.scroll-container {
+  height: 80vh;
+}
+.carousel-primary {
+  top: 1%;
+  position: absolute;
+  width: 100%;
+  left: 90%;
+  white-space: nowrap;
+}
+.carousel-primary-1 {
+  top: 50%;
+  left: -192%;
+  position: absolute;
+  width: 100%;
+  white-space: nowrap;
+}
+.carousel-secondary {
+  top: 1%;
+  position: absolute;
+  width: 100%;
+  left: 287%;
+  white-space: nowrap;
+}
+.carousel-secondary-1 {
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  left: -300%;
+  white-space: nowrap;
+}
+.carousel-primary img {
+  width: 100%;
+  margin-left: 20px;
+}
+.carousel-primary {
+  animation: scroll1 20s linear infinite;
+}
+.carousel-secondary {
+  animation: scroll2 20s linear infinite;
+  animation-delay: 10s;
+}
+.carousel-primary-1 {
+  animation: scroll3 20s linear infinite;
+}
+.carousel-secondary-1 {
+  animation: scroll4 20s linear infinite;
+  animation-delay: 10s;
+}
+
+@keyframes scroll1 {
+  0% {
+    left: 105%;
+  }
+  100% {
+    left: -110%;
+  }
+}
+@keyframes scroll2 {
+  0% {
+    left: 105%;
+  }
+  100% {
+    left: -110%;
+  }
+}
+@keyframes scroll3 {
+  0% {
+    left: -115%;
+  }
+  100% {
+    left: 110%;
+  }
+}
+@keyframes scroll4 {
+  0% {
+    left: -115%;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-container {
+    height: 50vh;
+  }
+  @keyframes scroll1 {
+    0% {
+      left: 135%;
+    }
+    100% {
+      left: -150%;
+    }
+  }
+  @keyframes scroll2 {
+    0% {
+      left: 155%;
+    }
+    100% {
+      left: -150%;
+    }
+  }
+  @keyframes scroll3 {
+    0% {
+      left: -165%;
+    }
+    100% {
+      left: 110%;
+    }
+  }
+  @keyframes scroll4 {
+    0% {
+      left: -175%;
+    }
+    100% {
+      left: 115%;
+    }
+  }
+}
+.together{
+  backdrop-filter: blur(50px);
+  color: #000;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+.together_container{
+  width: 50%;
+}
+@media screen and (max-width: 900px) {
+  .together_container{
+    width: 90%;
+  }
+}
+.together_obj{
+  width: 15rem;
+}
+@media screen and (max-width: 700px) {
+  .together_obj{
+    width: 8rem;
+  }
+}

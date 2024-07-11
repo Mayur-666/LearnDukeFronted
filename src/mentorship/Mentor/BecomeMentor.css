@@ -1,0 +1,55 @@
+progress[value]::-webkit-progress-bar {
+  border-radius: 20px;
+  background: #e4e4e4; 
+}
+progress[value]::-webkit-progress-value {
+  border-radius: 10em;
+  background: rgb(253 186 116);
+}
+.suggestion{
+  min-height: 81vh;
+  
+}
+@media screen and (max-width: 768px){
+  .suggestion{
+    min-height: 60vh;
+  }
+  
+}
+.suggestion_container{
+  min-height: 40vh;
+  width: 41vh;
+  height: 41vh;
+  position: relative;
+}
+.mentorInputs{
+  min-height: 60vh;
+}
+.suggestion_container::after{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  transform: rotate(45deg);
+  border-radius: 2rem;
+  width: 37vh;
+  height: 37vh;
+  border: 3px solid rgb(249 115 22);
+}
+/* .suggestion_container::after{
+  content: "";
+  position: absolute;
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  animation: rotate 4s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
